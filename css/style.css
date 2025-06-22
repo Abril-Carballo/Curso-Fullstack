@@ -1,70 +1,79 @@
+/* Reset general de márgenes y rellenos para todos los elementos */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0; 
+    padding: 0; 
 }
 
+/* Estilo general del cuerpo de la página */
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(218, 236, 241);
+    background-color: rgb(218, 236, 241); 
 }
 
+/* Encabezado principal */
 header {
-    background-color: #1E3A89;
+    background-color: #1E3A89; 
     line-height: 30px;
-    display: flex;
+    display: flex; /* Flexbox para alinear contenido */
     align-items: center;
     padding: 10px 20px;
 }
 
+/* Estilo del título dentro del header */
 header h2 {
     color: white;
     margin-left: 20px;
-    margin-right: auto; 
+    margin-right: auto; /* Empuja los enlaces hacia la derecha */
 }
 
+/* Estilo de los enlaces dentro del header */
 header a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* Elimina subrayado */
     margin-left: 30px; /* Espacio entre los enlaces */
 }
 
+/* Sección principal con imagen de fondo centrada y texto centrado */
 .hero {
-    background-image: url(../img1.jpg);
+    background-image: url(../img1.jpg); 
     background-size: cover;
     background-position: center;
-    height: 30vh; /* para ocupar toda la pantalla, o lo que necesites */
-    
+    height: 30vh; 
+
     display: flex;
-    justify-content: center; /* centra horizontalmente */
-    align-items: center;     /* centra verticalmente */   
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */   
 }
 
-
+/* Título dentro de la sección .hero con fondo semitransparente */
 .hero h1 {
     color: white;
-    background-color: rgba(126, 124, 124, 0.68);
+    background-color: rgba(126, 124, 124, 0.68); 
     width: 380px;
     border-radius: 10px;
     text-align: center;
     padding: 15px 30px;
-    margin: 0; /* eliminás los márgenes para que no afecten la posición */
+    margin: 0; /* Elimina márgenes externos */
 }
 
+/* Cuadro de contenido con borde, fondo blanco y texto azul oscuro */
 .cuadro {
   width: 650px;                 
-  margin: 20px auto 0 auto;     
+  margin: 20px auto 0 auto;     /* Centrado horizontal y separación superior */
   padding: 10px;    
   padding-left: 25px;        
   background-color: white;  
   border: 2px solid #ccc;     
   border-radius: 10px;
-  line-height: 35px;   /* interlineado */
+  line-height: 35px;   /* Interlineado */
 }
 
+/* Título dentro del cuadro */
 .cuadro h3{
     color: #1E3A89;
 }
 
+/* Pie de página fijo al fondo con texto blanco centrado */
 footer {
   position: fixed;
   bottom: 0;
