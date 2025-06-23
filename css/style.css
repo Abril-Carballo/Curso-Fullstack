@@ -35,7 +35,7 @@ header a {
 
 /* Sección principal con imagen de fondo centrada y texto centrado */
 .hero {
-    background-image: url(../img1.jpg); 
+    background-image: url(../img/img1.jpg); 
     background-size: cover;
     background-position: center;
     height: 30vh; 
